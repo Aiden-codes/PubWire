@@ -1,0 +1,3 @@
+# PubWire
+Masters Dissertation for Anglia Ruskin University (2020)
+PUBWIRE: DEVELOPMENT OF A SAMPLE ANDROID APPLICATION FOR PUBS AND PEOPLE
