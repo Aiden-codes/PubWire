@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:foregroundTint="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        app:itemBackground="@color/colorIcon"
+        app:itemIconTint="@color/colorIcon"
+        app:itemTextColor="@color/colorIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_toolbar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/barika"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/drink_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:id="@+id/drink_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scaleType="fitXY"
+            android:text="drink_name"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/drink_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="fill_horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scaleType="fitXY"
+            android:text="drink_info"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"/>
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/drink_ratingBar"
+            style="?attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:numStars="5"
+            android:progressBackgroundTint="@android:color/black"
+            android:progressTint="@android:color/holo_orange_light"
+            android:rating="0.0"
+            android:secondaryProgressTint="@android:color/holo_orange_light"
+            android:stepSize="0.1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scaleType="fitXY"
+            android:text="Best pubs to get it:"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drink_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintTop_toBottomOf="@+id/drink_ll"
+        tools:listitem="@layout/item_drinkshow"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

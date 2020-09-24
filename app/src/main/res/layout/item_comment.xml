@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_showcomment"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@android:color/white">
+
+<RelativeLayout
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:viewBindingIgnore="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/commentshow_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_action_account_circle_40"
+        android:layout_marginLeft="5dp" />
+
+    <RatingBar
+        android:id="@+id/commentshow_ratingBar"
+        style="?attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:numStars="5"
+        android:progressBackgroundTint="@android:color/black"
+        android:progressTint="@android:color/holo_orange_light"
+        android:rating="0.0"
+        android:secondaryProgressTint="@android:color/holo_orange_light"
+        android:stepSize="0.1"
+        android:layout_marginLeft="210dp"/>
+
+    <TextView
+        android:id="@+id/commentshow_starNum"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center_vertical"
+        tools:text="0"
+        android:layout_marginLeft="395dp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/commentshow_image">
+
+        <TextView
+            android:id="@+id/commentshow_user"
+            android:layout_width="160dp"
+            android:layout_height="32dp"
+            android:textStyle="bold"
+            tools:text="user"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/commentshow_body"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

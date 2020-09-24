@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topdrinks_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topdrinks_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:text="drinkname"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"/>
+
+            <TextView
+                android:id="@+id/topdrinks_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:padding="1dp"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textStyle="italic"/>
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/topdrinks_ratingBar"
+                style="?attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:numStars="5"
+                android:progressBackgroundTint="@android:color/black"
+                android:progressTint="@android:color/holo_orange_light"
+                android:rating="0.0"
+                android:secondaryProgressTint="@android:color/holo_orange_light"
+                android:stepSize="0.1"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

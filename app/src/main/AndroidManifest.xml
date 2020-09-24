@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pubwire">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity android:name=".Chatwin" />
+        <activity android:name=".Saditappo"/>
+        <activity android:name=".Gravity"/>
+        <activity android:name=".comments.chatwin.MainCommentActivity" />
+        <activity android:name=".comments.saditappo.MainCommentActivity"/>
+        <activity android:name=".comments.gravity.MainCommentActivity"/>
+        <activity android:name=".TopDrinks" />
+        <activity android:name=".AllDrinks" />
+        <activity android:name=".TopPubs" />
+        <activity android:name=".AllPubs" />
+
+
+
+        <activity android:name=".profile.AccountActivity" />
+        <activity android:name=".profile.Register" />
+        <activity android:name=".profile.Login" />
+        <activity android:name=".profile.EditProfile" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".maps.GoogleMapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleAmericanoRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleAperolSpritzRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleBlackMojitoRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleBrambleRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleBrambleWithBrockmansRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleCaipirinhaPremiumRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleCaipirinhaRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleCaipiroskaFruttaRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleCaipiroskaRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleDaiquiriRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleHugoSpritzRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleJapaneseIcedTeaRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleLondonMuleRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleLongIslandIcedTeaRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleMaiTaiRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleMargaritaRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleMiamiRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleMitoDellaSirenaRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleMojitoRate" />
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleMoscowMuleRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleNegroniRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleNightTailRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleSbagliatoRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleSexOnTheBeachRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleSpecialRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleTimFizzRate"/>
+        <activity android:name=".drinklists.chatwin.ratingpage.PubExampleTimSpritzRate"/>
+
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoAmericanoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoAperolSpritzRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoBloodyMaryRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoCampariOrangeRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoCampariSpritzRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoCubaPestatoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoDaiquiriRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoGinSourRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoHugoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoLondonMuleRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoLongIslandIcedTeaRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMargaritaRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMartiniBiancoSpritzRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMartiniCocktailRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMartiniRossoSummerRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMartiniRoyalRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMilanoCardanoTorinoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMilanoTorinoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMojitoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoMoscowMuleRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoNegroniRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoNegroskiRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoP31GreenSpritzRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoPomodoroConditoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoQuattroBianchiRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoSaditappoAnalcolicoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoSbagliatoRate"/>
+        <activity android:name=".drinklists.saditappo.ratingpage.SaditappoVodkaSourRate"/>
+
+        <activity android:name=".drinklists.gravity.ratingpage.GravityAppletiniRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityCaipirinaDeAipoRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityCerisePunchRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityGrayAppleRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityIndianSpritzRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityIngleseSpagnoloItalianoRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityMartiniDoItBitterRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityMexicoNuvoleRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityRosaMoskataRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityRosaRosaRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravitySMayfairRate"/>
+        <activity android:name=".drinklists.gravity.ratingpage.GravityTommys1492Rate"/>
+
+
+        <activity android:name=".drinklists.saditappo.SaditappoDrinkListRatingAverage"/>
+        <activity android:name=".drinklists.chatwin.ChatwinDrinkListRatingAverage"/>
+        <activity android:name=".drinklists.gravity.GravityDrinkListRatingAverage"/>
+
+        <activity android:name=".drinklists.chatwin.ChatwinDrinkList" />
+        <activity android:name=".drinklists.saditappo.SaditappoDrinkList"/>
+        <activity android:name=".drinklists.gravity.GravityDrinkList"/>
+
+        <activity android:name=".drinks.DrinkMojito" />
+        <activity android:name=".drinks.DrinkAmericano"/>
+        <activity android:name=".drinks.DrinkAperolSpritz"/>
+        <activity android:name=".drinks.DrinkDaiquiri"/>
+        <activity android:name=".drinks.DrinkLondonMule"/>
+        <activity android:name=".drinks.DrinkLongIslandIcedTea"/>
+        <activity android:name=".drinks.DrinkMargarita"/>
+        <activity android:name=".drinks.DrinkTommys1492"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PubWire</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="user">User</string>
+    <string name="tag">Drink Responsibly</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-Type Password</string>
+    <string name="list_title">Top 5 Drinks</string>
+    <string name="pub_name1">Pub_Name</string>
+    <string name="pub_info1">Address info</string>
+    <string name="comment_list">Comments and Ratings</string>
+    <string name="new_user">New User? Register here</string>
+    <string name="pwd_forget">Forgot password?</string>
+    <string name="Login">Login</string>
+    <string name="register_already">Already Registered? Login here</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="your_email">Email</string>
+
+
+    <string name="email_label">Email</string>
+    <string name="pub_info2">Other Info</string>
+
+</resources>
